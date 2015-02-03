@@ -1,6 +1,5 @@
 # ipset-whitelist-blacklist
 ipset the white/black list for the device that connetc to the router and ip is in lan range,generate by dhcp.
-<<<<<<< HEAD
 ##authd 认证/白/黑名单
 **1. cat /etc/firewall.auth；**
 >
@@ -47,5 +46,3 @@ ipset the white/black list for the device that connetc to the router and ip is i
 >>>>1. 脚本实现更新iptables 规则表；
 >
 >>>c. 更新用户在线列表；
-=======
->>>>>>> a3cceca1782e533b52b9fd003e33271c291e9cd3
