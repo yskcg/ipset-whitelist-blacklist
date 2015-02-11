@@ -38,7 +38,7 @@ ipset the white/black list for the device that connetc to the router and ip is i
 
 >**黑名单**
 >
->>1.用户点击网页，从用户在线列表中选取设备设置黑名单，luci 收到该消息后，需要进行两个动作：
+>>1. 用户点击网页，从用户在线列表中选取设备设置黑名单，luci 收到该消息后，需要进行两个动作：
 >
 >>>a. 保存该配置，uci 类型的配置文件；
 >
@@ -46,3 +46,11 @@ ipset the white/black list for the device that connetc to the router and ip is i
 >>>>1. 脚本实现更新iptables 规则表；
 >
 >>>c. 更新用户在线列表；
+>
+>>2. 开机启动时，需要去读取DHCP的配置文件，来进行解析黑白名单，进行防火墙规则的改变
+>
+>>3. 页面进行配置的时候，怎么来去调用脚本来进行处理呢？
+>
+>>4. 认证的开关，可以使用如下的命令来操作
+>>>关闭认证：`ubus call auth status '{"enable":false}'`
+>>>开启认证： `ubus call auth status '{"enable":true}'`
